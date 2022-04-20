@@ -82,3 +82,37 @@ section .line {
   width: 85%;
   border: 1px solid #646369;
 }
+
+section .part-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  margin: 20px auto;
+}
+
+section .part-two div {
+  width: 50%
+}
+
+section .part-two h3 {
+  color: #9490ff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 5px;
+}
+
+section .part-two ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+section .part-two li {
+  color: #f5f5ff;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+
