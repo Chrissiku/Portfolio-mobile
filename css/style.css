@@ -13,28 +13,32 @@ body {
 }
 
 header {
-  text-align: center;
-  color: #fff;
-}
-
-header nav {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   padding: 20px;
   margin: 0 20px 0 20px;
   line-height: 16px;
 }
 
-header nav .brand {
+header .brand {
   font-size: 18px;
   font-weight: 500;
+  color: #fff;
 }
 
-header nav .menu {
+a:hover,
+a:focus,
+a:visited {
+  color: #fff;
+}
+
+header .menu {
   font-size: 25px;
+  color: #fff;
 }
 
-header nav .menu:hover {
+header .menu:hover {
   color: rgb(124, 115, 251);
 }
 
@@ -42,12 +46,12 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  min-height: 90vh;
+  height: 100vh;
   background: url(../images/Top_circles.png) center no-repeat;
   text-align: center;
 }
 
-section h1 {
+section .part-one h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
@@ -55,7 +59,7 @@ section h1 {
   color: #7d73fc;
 }
 
-section h2 {
+section .part-one h2 {
   font-size: 32px;
   margin-bottom: 20px;
   font-weight: 500;
@@ -64,7 +68,7 @@ section h2 {
   color: #edecff;
 }
 
-section p {
+section .part-one p {
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -73,7 +77,7 @@ section p {
   color: #c8c8d4;
 }
 
-section hr {
+section .line {
   margin: auto;
   width: 85%;
   border: 1px solid #646369;
