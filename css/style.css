@@ -15,7 +15,6 @@ body {
 header {
   text-align: center;
   color: #fff;
-  font-size: 25px;
 }
 
 header nav {
@@ -27,9 +26,53 @@ header nav {
 }
 
 header nav .brand {
+  font-size: 18px;
   font-weight: 500;
+}
+
+header nav .menu {
+  font-size: 25px;
 }
 
 header nav .menu:hover {
   color: rgb(124, 115, 251);
+}
+
+section {
+  padding-top: 20px;
+  min-height: 90vh;
+  background: url(../images/Top_circles.png) center no-repeat;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  padding: 10px;
+  color: #7d73fc;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 44px;
+  padding: 10px;
+  color: #edecff;
+}
+
+section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 10px;
+  color: #c8c8d4;
+}
+
+section hr {
+  margin: auto;
+  width: 85%;
+  border: 1px solid #646369;
 }
