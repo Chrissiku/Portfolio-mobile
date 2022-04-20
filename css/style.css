@@ -39,6 +39,8 @@ header nav .menu:hover {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   min-height: 90vh;
   background: url(../images/Top_circles.png) center no-repeat;
