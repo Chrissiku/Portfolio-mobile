@@ -42,6 +42,12 @@ header .menu:hover {
   color: rgb(124, 115, 251);
 }
 
+section .line {
+  margin: auto;
+  width: 85%;
+  border: 1px solid #646369;
+}
+
 .home-section {
   display: flex;
   flex-direction: column;
@@ -75,12 +81,6 @@ header .menu:hover {
   line-height: 28px;
   padding: 10px;
   color: #c8c8d4;
-}
-
-.home-section .line {
-  margin: auto;
-  width: 85%;
-  border: 1px solid #646369;
 }
 
 .home-section .part-two {
