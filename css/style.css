@@ -16,8 +16,8 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 20px;
-  margin: 0 20px 0 20px;
+  padding: 25px 20px 0 20px;
+  margin: 0 20px 0 10px;
   line-height: 16px;
 }
 
@@ -45,9 +45,9 @@ header .menu:hover {
 .home-section {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  height: 100vh;
-  background: url(../images/Top_circles.png) center no-repeat;
+  padding-top: 10px;
+  height: auto;
+  background: url(../images/Top_circles.png) top center no-repeat;
   text-align: center;
 }
 
