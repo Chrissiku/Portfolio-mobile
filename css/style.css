@@ -158,8 +158,11 @@ section .line {
   background: url(../images/bg-middle.png) top center no-repeat;
 }
 
-.middle-section .work-title {
+.section-title {
   color: #9490ff;
+}
+
+.middle-section .work-title {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 500;
@@ -199,12 +202,15 @@ section .line {
   padding: 20px 20px 20px 0;
 }
 
-.middle-section .work-content .work-card .card-text {
+.section-text {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
   font-weight: 400;
-  line-height: 28px;
   color: #cacad1;
+}
+
+.middle-section .work-content .work-card .card-text {
+  font-size: 20px;
+  line-height: 28px;
   margin-bottom: 10px;
 }
 
@@ -251,4 +257,8 @@ section .line {
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 24px;
+}
+
+.contact-section {
+  border: 1px solid red;
 }
