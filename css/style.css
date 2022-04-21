@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -16,6 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   padding: 25px 20px 0 20px;
   margin: 0 20px 0 10px;
   line-height: 16px;
@@ -55,6 +55,7 @@ section .line {
   height: auto;
   background: url(../images/Top_circles.png) top center no-repeat;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .home-section .part-one h1 {
@@ -148,4 +149,106 @@ section .line {
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
+}
+
+.middle-section {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  margin: auto;
+  background: url(../images/bg-middle.png) top center no-repeat;
+}
+
+.middle-section .work-title {
+  color: #9490ff;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  list-style: 52px;
+  padding-bottom: 30px;
+}
+
+.middle-section .line {
+  width: 100%;
+}
+
+.middle-section .work-content {
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.middle-section .work-content .work-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle-section .work-content .work-card img {
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.middle-section .work-content .work-card .card {
+  color: #fff;
+}
+
+.middle-section .work-content .work-card .card h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 20px 20px 20px 0;
+}
+
+.middle-section .work-content .work-card .card-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #cacad1;
+  margin-bottom: 10px;
+}
+
+.middle-section .work-content .work-card .cart-link {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.middle-section .work-content .work-card .cart-link ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.middle-section .work-content .work-card .cart-link ul li {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-right: 1px solid #555;
+  padding: 8px 0;
+}
+
+.middle-section .work-content .work-card .cart-link ul li:last-child {
+  border: none;
+}
+
+.middle-section .work-content .work-card .cart-link ul li a {
+  margin-right: 20px;
+}
+
+.btn {
+  background: #7d73fc;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.middle-section .work-content .work-card .btn span {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 24px;
 }
