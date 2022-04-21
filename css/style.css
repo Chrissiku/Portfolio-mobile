@@ -42,7 +42,7 @@ header .menu:hover {
   color: rgb(124, 115, 251);
 }
 
-section {
+.home-section {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -51,7 +51,7 @@ section {
   text-align: center;
 }
 
-section .part-one h1 {
+.home-section .part-one h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
@@ -59,7 +59,7 @@ section .part-one h1 {
   color: #7d73fc;
 }
 
-section .part-one h2 {
+.home-section .part-one h2 {
   font-size: 32px;
   margin-bottom: 20px;
   font-weight: 500;
@@ -68,7 +68,7 @@ section .part-one h2 {
   color: #edecff;
 }
 
-section .part-one p {
+.home-section .part-one p {
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -77,13 +77,13 @@ section .part-one p {
   color: #c8c8d4;
 }
 
-section .line {
+.home-section .line {
   margin: auto;
   width: 85%;
   border: 1px solid #646369;
 }
 
-section .part-two {
+.home-section .part-two {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -91,11 +91,11 @@ section .part-two {
   margin: 20px auto;
 }
 
-section .part-two div {
+.home-section .part-two div {
   width: 50%;
 }
 
-section .part-two h3 {
+.home-section .part-two h3 {
   color: #9490ff;
   font-size: 12px;
   font-weight: 500;
@@ -103,12 +103,12 @@ section .part-two h3 {
   margin: 5px;
 }
 
-section .part-two ul {
+.home-section .part-two ul {
   list-style: none;
   padding: 20px 0;
 }
 
-section .part-two li {
+.home-section .part-two li {
   color: #f5f5ff;
   line-height: 24px;
   font-size: 15px;
@@ -116,14 +116,14 @@ section .part-two li {
   padding: 5px 10px;
 }
 
-section .part-three {
+.home-section .part-three {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 40px;
 }
 
-section .part-three .social {
+.home-section .part-three .social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,17 +133,17 @@ section .part-three .social {
   margin: 20px 10px;
 }
 
-section .part-three .work {
+.home-section .part-three .work {
   color: #a2a3ae;
 }
 
-section .part-three .work i {
+.home-section .part-three .work i {
   color: #a2a3ae;
   width: 20px;
   height: 30px;
 }
 
-section .part-three .work span {
+.home-section .part-three .work span {
   color: #a2a3ae;
   font-weight: 500;
   font-size: 20px;
