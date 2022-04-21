@@ -127,14 +127,10 @@ section .part-three .social {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  list-style: none;
   color: #fff;
   margin: 20px 10px;
-}
-
-section .part-three .social div {
-  width: 40px;
-  padding: 20px;
-  font-weight: 700;
 }
 
 section .part-three .work {
