@@ -92,7 +92,7 @@ section .part-two {
 }
 
 section .part-two div {
-  width: 50%
+  width: 50%;
 }
 
 section .part-two h3 {
@@ -116,3 +116,40 @@ section .part-two li {
   padding: 5px 10px;
 }
 
+section .part-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+section .part-three .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 20px 10px;
+}
+
+section .part-three .social div {
+  width: 40px;
+  padding: 20px;
+  font-weight: 700;
+}
+
+section .part-three .work {
+  color: #a2a3ae;
+}
+
+section .part-three .work i {
+  color: #a2a3ae;
+  width: 20px;
+  height: 30px;
+}
+
+section .part-three .work span {
+  color: #a2a3ae;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
