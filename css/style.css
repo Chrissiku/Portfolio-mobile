@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(22, 23, 100);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  margin: 0 20px 0 20px;
+  line-height: 16px;
+}
+
+header .brand {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  color: #fff;
+}
+
+header .menu {
+  font-size: 25px;
+  color: #fff;
+}
+
+header .menu:hover {
+  color: rgb(124, 115, 251);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100vh;
+  background: url(../images/Top_circles.png) center no-repeat;
+  text-align: center;
+}
+
+section .part-one h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  padding: 10px;
+  color: #7d73fc;
+}
+
+section .part-one h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 44px;
+  padding: 10px;
+  color: #edecff;
+}
+
+section .part-one p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 10px;
+  color: #c8c8d4;
+}
+
+section .line {
+  margin: auto;
+  width: 85%;
+  border: 1px solid #646369;
+}
+
+section .part-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  margin: 20px auto;
+}
+
+section .part-two div {
+  width: 50%;
+}
+
+section .part-two h3 {
+  color: #9490ff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 5px;
+}
+
+section .part-two ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+section .part-two li {
+  color: #f5f5ff;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+
+section .part-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+section .part-three .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: #fff;
+  margin: 20px 10px;
+}
+
+section .part-three .work {
+  color: #a2a3ae;
+}
+
+section .part-three .work i {
+  color: #a2a3ae;
+  width: 20px;
+  height: 30px;
+}
+
+section .part-three .work span {
+  color: #a2a3ae;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
