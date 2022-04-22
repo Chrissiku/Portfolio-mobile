@@ -152,6 +152,9 @@ section .line {
 }
 
 .middle-section {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
   width: 100%;
   padding: 0 20px 0 20px;
   margin: auto;
