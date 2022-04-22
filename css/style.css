@@ -249,6 +249,23 @@ section .line {
   width: 100px;
   height: 50px;
   margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #7a71f7;
+}
+
+.btn:focus {
+  background: #5e42d7;
+}
+
+.btn:active {
+  background: #7d73fc;
+}
+
+.btn:disabled {
+  background: #2a2b33;
 }
 
 .middle-section .work-content .work-card .btn span {
