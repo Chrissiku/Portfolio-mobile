@@ -160,12 +160,12 @@ section .line {
 
 .section-title {
   color: #9490ff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .middle-section .work-title {
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
-  font-weight: 500;
   list-style: 52px;
   padding-bottom: 30px;
 }
@@ -260,5 +260,55 @@ section .line {
 }
 
 .contact-section {
-  border: 1px solid red;
+  margin-top: 20px;
+}
+
+.contact-section .contact-title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.contact-section .contact-text {
+  text-align: center;
+}
+
+.contact-section .contact-text p {
+  padding: 20px;
+}
+
+.contact-section .contact-form {
+  margin: 10px;
+}
+
+.contact-section .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-section .contact-form form input {
+  width: 90%;
+  height: 48px;
+}
+
+.contact-section .contact-form form input[placeholder] {
+  padding-left: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #191765;
+}
+
+.contact-section .contact-form form textarea {
+  width: 90%;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #81818c;
 }
