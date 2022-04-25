@@ -220,6 +220,7 @@ section .line {
 .middle-section .work-content .work-card .cart-link {
   padding-top: 20px;
   margin-bottom: 20px;
+  float : left;
 }
 
 .middle-section .work-content .work-card .cart-link ul {
