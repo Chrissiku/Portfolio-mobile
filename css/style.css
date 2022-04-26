@@ -344,22 +344,3 @@ section .line {
   line-height: 24px;
   color: #81818c;
 }
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .foot-line {
-  border: 1px solid #3a3837;
-  width: 100%;
-}
-
-footer .end-line {
-  border: 3px solid rgba(0, 0, 0, 0.932);
-  border-radius: 5px;
-  width: 40%;
-  margin: 20px 0 5px 0;
-}
