@@ -27,6 +27,14 @@ header .brand {
   color: #fff;
 }
 
+footer p a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 a:hover,
 a:focus,
 a:visited {
@@ -124,7 +132,7 @@ section .line {
   padding-bottom: 40px;
 }
 
-.home-section .part-three .social {
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +140,10 @@ section .line {
   list-style: none;
   color: #fff;
   margin: 20px 10px;
+}
+
+.social li a i {
+  font-size: 25px;
 }
 
 .home-section .part-three .work {
@@ -220,6 +232,7 @@ section .line {
 .middle-section .work-content .work-card .cart-link {
   padding-top: 20px;
   margin-bottom: 20px;
+  float: right;
 }
 
 .middle-section .work-content .work-card .cart-link ul {
@@ -331,4 +344,23 @@ section .line {
   font-weight: 400;
   line-height: 24px;
   color: #81818c;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .foot-line {
+  border: 1px solid #3a3837;
+  width: 100%;
+}
+
+footer .end-line {
+  border: 3px solid rgba(0, 0, 0, 0.932);
+  border-radius: 5px;
+  width: 40%;
+  margin: 20px 0 5px 0;
 }
