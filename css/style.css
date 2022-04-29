@@ -207,6 +207,7 @@ section.about {
 
 section.about .line {
   width: 100%;
+  margin: 20px auto;
 }
 
 section.about .card {
@@ -390,6 +391,7 @@ footer .foot-line {
     line-height: 114px;
     font-weight: 700;
     text-transform: capitalize;
+    padding: 0 50px;
   }
 
   section.portfolio .portfolio-head h2 {
@@ -439,6 +441,10 @@ footer .foot-line {
     display: block;
   }
 
+  section.about .line {
+    width: 90%;
+  }
+
   section.about .card {
     display: grid;
     grid-template: auto/ 50% 50%;
@@ -483,6 +489,7 @@ footer .foot-line {
 
   section.contact {
     padding: 0 130px;
+    width: 684px;
   }
 
   section.contact .contact-title1 {
