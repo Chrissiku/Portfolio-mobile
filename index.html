@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio : Mobile version skeleton</title>
+    <title>Portfolio - Desktop version</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -12,65 +13,75 @@
     />
   </head>
   <body>
-    <!-- Navbar part   -->
-
+    <!-- Header section -->
     <header>
-      <a href="#" class="nav-item brand">John Doe</a>
-      <nav class="menu">
-        <a><i class="fa-solid fa-bars"></i></a>
-      </nav>
+      <div class="brand"><a href="" class="color1">John Doe</a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#portfolio" class="color1">Portoflio</a></li>
+          <li><a href="#about" class="color1">About</a></li>
+          <li><a href="" class="color1">Conatct</a></li>
+          <li>
+            <a href="" class="color1"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+        </ul>
+        <a class="menu-icon"><i class="fa-solid fa-bars"></i></a>
+      </div>
     </header>
 
-    <!-- Home part -->
-    <section class="home-section">
-      <div class="part-one">
-        <h1>Laura Jong</h1>
+    <!-- Home section -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-head text-center">
+        <h1 class="color2">Chris Siku</h1>
         <h2>Software Developer</h2>
-        <p>
+      </div>
+
+      <div class="portfolio-infos">
+        <p class="text-center">
           I can help you build a product , feature or website Look through some
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
         </p>
         <div class="line"></div>
+        <div class="techo">
+          <div id="language">
+            <h3>Languages</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+            </ul>
+          </div>
+          <!-- Frameworks part -->
+          <div id="framework">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Ruby on Rail</li>
+              <li>RSPec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </div>
+          <!-- skills part -->
+          <div>
+            <h3>Skills</h3>
+            <ul>
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="line"></div>
       </div>
-
-      <div class="part-two">
-        <!-- Lanhuages part -->
-        <div class="language">
-          <h3 class="title">Languages</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>Ruby</li>
-            <li>Html</li>
-            <li>Css</li>
-          </ul>
+      <div class="portfolio-link">
+        <div class="work work-one">
+          <div><span> Work</span><i class="fa-solid fa-arrow-down"></i></div>
         </div>
-        <!-- Frameworks part -->
-        <div class="framework">
-          <h3 class="title">Frameworks</h3>
-          <ul>
-            <li>Bootstrap</li>
-            <li>Ruby on Rail</li>
-            <li>RSPec</li>
-            <li>CapyBara</li>
-            <li>Selenium</li>
-          </ul>
-        </div>
-        <!-- skills part -->
-        <div class="skill">
-          <h3 class="title">Skills</h3>
-          <ul>
-            <li>Codekit</li>
-            <li>Github</li>
-            <li>Codepen</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
-          </ul>
-        </div>
-      </div>
-      <div class="line"></div>
-
-      <div class="part-three">
         <ul class="social">
           <li>
             <a href=""><i class="fa-brands fa-github-square"></i></a>
@@ -88,126 +99,122 @@
             <a href=""><i class="fa-solid fa-m"></i></a>
           </li>
         </ul>
-        <div class="work">
+        <div class="work work-two">
           <div><i class="fa-solid fa-arrow-down"></i><span> Work</span></div>
         </div>
       </div>
     </section>
 
-    <!-- Middle part -->
-    <section class="middle-section">
-      <h3 class="section-title work-title">
-        MY RECENT <br />
-        WORK
-      </h3>
+    <!-- Main section -->
+    <section class="about" id="about">
+      <h2 class="color2">My recent work</h2>
       <div class="line"></div>
-      <div class="work-content">
-        <!-- Work card one -->
-        <div class="work-card">
+      <div class="card">
+        <div class="card-image">
           <img src="images/work_img.png" alt="" />
-          <div class="card">
-            <h4>Multi-Post Stories</h4>
-            <div class="section-text card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </div>
-            <div class="cart-link">
-              <ul>
-                <li><a href="">css</a></li>
-                <li><a href="">html</a></li>
-                <li><a href="">bootstrap</a></li>
-                <li><a href="">Ruby</a></li>
-              </ul>
-            </div>
-            <button type="button" class="btn">
-              <span>See Project</span>
-            </button>
-          </div>
         </div>
-
-        <!-- Work card two -->
-        <div class="work-card">
-          <img src="images/work_img.png" alt="" />
-          <div class="card">
-            <h4>Multi-Post Stories</h4>
-            <div class="section-text card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </div>
-            <div class="cart-link">
-              <ul>
-                <li><a href="">css</a></li>
-                <li><a href="">html</a></li>
-                <li><a href="">bootstrap</a></li>
-                <li><a href="">Ruby</a></li>
-              </ul>
-            </div>
-            <button type="button" class="btn">
-              <span>See Project</span>
-            </button>
+        <div class="card-detail">
+          <h3>Multi-Post Stories</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <div class="card-link">
+            <ul>
+              <li><a href="">css</a></li>
+              <li><a href="">html</a></li>
+              <li><a href="">bootstrap</a></li>
+              <li><a href="">Ruby</a></li>
+            </ul>
           </div>
+          <button type="button" class="btn">
+            <span>See Project</span>
+          </button>
         </div>
+      </div>
 
-        <!-- Work card three -->
-        <div class="work-card">
+      <div class="card pair">
+        <div class="card-image">
           <img src="images/work_img.png" alt="" />
-          <div class="card">
-            <h4>Multi-Post Stories</h4>
-            <div class="section-text card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </div>
-            <div class="cart-link">
-              <ul>
-                <li><a href="">css</a></li>
-                <li><a href="">html</a></li>
-                <li><a href="">bootstrap</a></li>
-                <li><a href="">Ruby</a></li>
-              </ul>
-            </div>
-            <button type="button" class="btn">
-              <span>See Project</span>
-            </button>
-          </div>
         </div>
-
-        <!-- Work card four -->
-        <div class="work-card">
-          <img src="images/work_img.png" alt="" />
-          <div class="card">
-            <h4>Multi-Post Stories</h4>
-            <div class="section-text card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </div>
-            <div class="cart-link">
-              <ul>
-                <li><a href="">css</a></li>
-                <li><a href="">html</a></li>
-                <li><a href="">bootstrap</a></li>
-                <li><a href="">Ruby</a></li>
-              </ul>
-            </div>
-            <button type="button" class="btn">
-              <span>See Project</span>
-            </button>
+        <div class="card-detail">
+          <h3>Multi-Post Stories</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <div class="card-link">
+            <ul>
+              <li><a href="">css</a></li>
+              <li><a href="">html</a></li>
+              <li><a href="">bootstrap</a></li>
+              <li><a href="">Ruby</a></li>
+            </ul>
           </div>
+          <button type="button" class="btn">
+            <span>See Project</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="images/work_img.png" alt="" />
+        </div>
+        <div class="card-detail">
+          <h3>Multi-Post Stories</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <div class="card-link">
+            <ul>
+              <li><a href="">css</a></li>
+              <li><a href="">html</a></li>
+              <li><a href="">bootstrap</a></li>
+              <li><a href="">Ruby</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn">
+            <span>See Project</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card pair">
+        <div class="card-image">
+          <img src="images/work_img.png" alt="" />
+        </div>
+        <div class="card-detail">
+          <h3>Multi-Post Stories</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <div class="card-link">
+            <ul>
+              <li><a href="">css</a></li>
+              <li><a href="">html</a></li>
+              <li><a href="">bootstrap</a></li>
+              <li><a href="">Ruby</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn">
+            <span>See Project</span>
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- Contact part -->
-    <section class="contact-section">
-      <h3 class="section-title contact-title">CONTACT</h3>
-      <div class="section-text contact-text">
+    <!-- contact section -->
+    <section class="contact">
+      <h3 class="color2 title contact-title1">Let’s chat!</h3>
+      <h3 class="color2 title contact-title2">CONTACT US</h3>
+      <div class="contact-text">
         <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
@@ -230,7 +237,7 @@
             name="user_email"
             id="user_email"
             placeholder="Enter your Email"
-            value="jeremy@gmail.com"
+            value="chrissiku5@gmail.com"
           />
           <textarea
             name="msg"
@@ -246,11 +253,11 @@
       </div>
     </section>
 
-    <!-- Footer part -->
+    <!-- Footer section -->
     <footer>
       <div class="foot-line"></div>
       <div class="footer-content">
-        <ul class="social s-foot">
+        <ul class="social">
           <li>
             <a href=""><i class="fa-brands fa-github-square"></i></a>
           </li>
@@ -267,9 +274,8 @@
             <a href=""><i class="fa-solid fa-m"></i></a>
           </li>
         </ul>
+        <p><a href="mailto:chrissiku5@gmail.com">chrissiku5@gmail.com</a></p>
       </div>
-      <p><a href="mailto:chrissiku5@gmail.com">chrissiku5@gmail.com</a></p>
-      <div class="end-line"></div>
     </footer>
   </body>
 </html>
