@@ -9,253 +9,164 @@
 
 body {
   background-color: rgb(22, 23, 100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.color1 {
+  color: #fff;
+}
+
+.color2 {
+  color: #9390ff;
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
-  padding: 25px 20px 0 20px;
-  margin: 0 20px 0 10px;
-  line-height: 16px;
+  padding: 30px 50px;
+  line-height: 20px;
 }
 
 header .brand {
   font-size: 18px;
-  font-weight: 500;
-  color: #fff;
 }
 
-footer p a {
+.social i {
   color: #fff;
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
 }
 
-a:hover,
-a:focus,
-a:visited {
-  color: #fff;
-}
-
-header .menu {
-  font-size: 25px;
-  color: #fff;
+header .menu-icon i {
+  font-size: 20px;
 }
 
 header .menu:hover {
-  color: rgb(124, 115, 251);
+  color: #acb7c3;
 }
 
-section .line {
-  margin: auto;
-  width: 85%;
-  border: 1px solid #646369;
+header .menu ul {
+  display: none;
 }
 
-.home-section {
+.text-center {
+  text-align: center;
+}
+
+section.portfolio {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
-  height: auto;
+  justify-content: space-between;
   background: url(../images/Top_circles.png) top center no-repeat;
-  text-align: center;
   font-family: "Roboto", sans-serif;
 }
 
-.home-section .part-one h1 {
+section.portfolio .portfolio-head {
+  margin-bottom: 20px;
+}
+
+section.portfolio .portfolio-head h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
-  padding: 10px;
-  color: #7d73fc;
 }
 
-.home-section .part-one h2 {
+section.about h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+section.portfolio .portfolio-head h2 {
   font-size: 32px;
-  margin-bottom: 20px;
   font-weight: 500;
   line-height: 44px;
-  padding: 10px;
   color: #edecff;
 }
 
-.home-section .part-one p {
+section.portfolio .portfolio-infos {
+  padding: 10px;
+}
+
+section.portfolio .portfolio-infos p {
   font-size: 20px;
-  margin-bottom: 30px;
   font-weight: 400;
   line-height: 28px;
   padding: 10px;
+  margin-bottom: 20px;
   color: #c8c8d4;
 }
 
-.home-section .part-two {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: left;
-  margin: 20px auto;
+.line {
+  border: 1px solid #646369;
+  width: 85%;
+  margin: auto;
 }
 
-.home-section .part-two div {
-  width: 50%;
+section.portfolio .portfolio-infos .techo {
+  display: grid;
+  grid-template: auto auto / auto auto;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 0;
 }
 
-.home-section .part-two h3 {
+section.portfolio .portfolio-infos .techo h3 {
   color: #9490ff;
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
-  margin: 5px;
 }
 
-.home-section .part-two ul {
+section.portfolio .portfolio-infos .techo ul {
   list-style: none;
-  padding: 20px 0;
 }
 
-.home-section .part-two li {
+section.portfolio .portfolio-infos .techo ul li {
   color: #f5f5ff;
   line-height: 24px;
   font-size: 15px;
   font-weight: 400;
-  padding: 5px 10px;
+  padding: 3px 0;
 }
 
-.home-section .part-three {
+section.portfolio .portfolio-link {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 21px;
   list-style: none;
   color: #fff;
   margin: 20px 10px;
 }
 
-.social li a i {
-  font-size: 25px;
-}
-
-.home-section .part-three .work {
+section.portfolio .portfolio-link .work {
   color: #a2a3ae;
-}
-
-.home-section .part-three .work i {
-  color: #a2a3ae;
-  width: 20px;
-  height: 30px;
-}
-
-.home-section .part-three .work span {
-  color: #a2a3ae;
-  font-weight: 500;
   font-size: 20px;
-  line-height: 32px;
 }
 
-.middle-section {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 2;
-  width: 100%;
-  padding: 0 20px 0 20px;
-  margin: auto;
-  background: url(../images/bg-middle.png) top center no-repeat;
-}
-
-.section-title {
-  color: #9490ff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-.middle-section .work-title {
-  font-size: 40px;
-  list-style: 52px;
-  padding-bottom: 30px;
-}
-
-.middle-section .line {
-  width: 100%;
-}
-
-.middle-section .work-content {
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
-.middle-section .work-content .work-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.middle-section .work-content .work-card img {
-  width: 100%;
-  padding: 20px 0 20px 0;
-}
-
-.middle-section .work-content .work-card .card {
-  color: #fff;
-}
-
-.middle-section .work-content .work-card .card h4 {
-  font-family: "Roboto", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  padding: 20px 20px 20px 0;
-}
-
-.section-text {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  color: #cacad1;
-}
-
-.middle-section .work-content .work-card .card-text {
+section.portfolio .portfolio-link .work i {
   font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 10px;
+  margin: 0 10px;
 }
 
-.middle-section .work-content .work-card .cart-link {
-  padding-top: 20px;
-  margin-bottom: 20px;
-  float: right;
-}
-
-.middle-section .work-content .work-card .cart-link ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-
-.middle-section .work-content .work-card .cart-link ul li {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  border-right: 1px solid #555;
-  padding: 8px 0;
-}
-
-.middle-section .work-content .work-card .cart-link ul li:last-child {
-  border: none;
-}
-
-.middle-section .work-content .work-card .cart-link ul li a {
-  margin-right: 20px;
+section.portfolio .portfolio-link .work-one {
+  display: none;
 }
 
 .btn {
@@ -284,66 +195,146 @@ section .line {
   background: #2a2b33;
 }
 
-.middle-section .work-content .work-card .btn span {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 24px;
-}
-
-.contact-section {
-  margin-top: 20px;
-}
-
-.contact-section .contact-title {
-  text-align: center;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.contact-section .contact-text {
-  text-align: center;
-}
-
-.contact-section .contact-text p {
+section.about {
+  background-image: url(../images/bg_about.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: auto;
   padding: 20px;
 }
 
-.contact-section .contact-form {
-  margin: 10px;
+section.about .line {
+  width: 100%;
+  margin: 20px auto;
 }
 
-.contact-section .contact-form form {
+section.about .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.about .card .card-image img {
+  width: 100%;
+}
+
+section.about .card .card-detail {
+  color: #fff;
+}
+
+section.about .card .card-detail h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 20px 20px 20px 0;
+}
+
+section.contact .contact-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #cacad1;
+}
+
+section.about .card .card-detail p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #cacad1;
+}
+
+section.about .card .card-detail .card-link {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.about .card .card-detail .card-link ul {
+  display: flex;
+  list-style: none;
+}
+
+footer .footer-content p a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+section.about .card .card-detail .card-link ul li {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-right: 1px solid #555;
+  padding: 8px 10px;
+}
+
+section.about .card .card-detail .card-link ul li:last-child {
+  border: none;
+}
+
+section.about .card .card-detail .card-link ul li a {
+  color: #fff;
+}
+
+section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.contact .contact-title1 {
+  display: none;
+}
+
+section.contact .title {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+section.contact .contact-text {
+  padding: 20px;
+  text-align: center;
+}
+
+section.contact .contact-form {
+  width: 100%;
+  padding: 0 20px;
+}
+
+section.contact .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  margin: auto;
 }
 
-.contact-section .contact-form form input {
-  width: 90%;
+section.contact .contact-form form input {
+  width: 100%;
   height: 48px;
 }
 
-.contact-section .contact-form form input[placeholder] {
-  padding-left: 20px;
+section.contact .contact-form form input,
+section.contact .contact-form form textarea {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #191765;
+  padding: 20px;
 }
 
-.contact-section .contact-form form textarea {
-  width: 90%;
+section.contact .contact-form form textarea {
+  width: 100%;
+  height: 150px;
   padding: 20px;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #81818c;
 }
 
 footer {
@@ -351,6 +342,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin: 20px 0;
 }
 
 footer .foot-line {
@@ -358,9 +351,175 @@ footer .foot-line {
   width: 100%;
 }
 
-footer .end-line {
-  border: 3px solid rgba(0, 0, 0, 0.932);
-  border-radius: 5px;
-  width: 40%;
-  margin: 20px 0 5px 0;
+/* Media Query for Desktop vesion */
+
+@media screen and (min-width: 768px) {
+  header .logo {
+    font-size: 18px;
+  }
+
+  header .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  header .menu .menu-icon {
+    display: none;
+  }
+
+  header .menu ul a {
+    font-size: 15px;
+  }
+
+  section.portfolio {
+    background-image: url(../images/bg-port1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 150px;
+  }
+
+  section.portfolio .portfolio-head h1 {
+    font-size: 90px;
+    line-height: 105px;
+  }
+
+  section.about h2 {
+    font-size: 64px;
+    line-height: 114px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0 50px;
+  }
+
+  section.portfolio .portfolio-head h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    color: #edecff;
+  }
+
+  section.portfolio .portfolio-infos p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 10px;
+    color: #c8c8d4;
+  }
+
+  section.portfolio .portfolio-infos .techo {
+    display: grid;
+    grid-template: auto / auto auto auto;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  section.portfolio .portfolio-infos .techo h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  section.portfolio .portfolio-infos .techo ul li {
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 0;
+  }
+
+  section.portfolio .portfolio-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+  section.portfolio .portfolio-link .work-one {
+    display: block;
+  }
+
+  section.about .line {
+    width: 90%;
+  }
+
+  section.about .card {
+    display: grid;
+    grid-template: auto/ 50% 50%;
+    padding: 40px 0;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    gap: 20px;
+  }
+
+  section.about .card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.about .pair .card-detail {
+    grid-row-end: 1;
+  }
+
+  section.about .card .card-detail h3 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 500;
+    padding: 20px 0 20px 0;
+  }
+
+  section.contact .contact-text p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  section.about .card .card-detail p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #cacad1;
+  }
+
+  section.contact {
+    padding: 0 130px;
+    width: 684px;
+  }
+
+  section.contact .contact-title1 {
+    display: block;
+  }
+
+  section.contact .contact-title2 {
+    display: none;
+  }
+
+  section.contact .title {
+    font-size: 40px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+
+  section.contact .contact-text {
+    padding: 40px;
+    text-align: center;
+  }
+
+  section.contact .contact-form {
+    margin: 20px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
 }
