@@ -22,6 +22,7 @@ body {
 .color2 {
   color: #9390ff;
 }
+
 header {
   width: 100%;
   display: flex;
@@ -73,6 +74,15 @@ section.portfolio .portfolio-head h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
+}
+
+section.about h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 section.portfolio .portfolio-head h2 {
@@ -195,15 +205,6 @@ section.about {
   padding: 20px;
 }
 
-section.about h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
 section.about .line {
   width: 100%;
 }
@@ -229,7 +230,15 @@ section.about .card .card-detail h3 {
   padding: 20px 20px 20px 0;
 }
 
-section.about .card .card-detail P {
+section.contact .contact-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #cacad1;
+}
+
+section.about .card .card-detail p {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -245,6 +254,14 @@ section.about .card .card-detail .card-link {
 section.about .card .card-detail .card-link ul {
   display: flex;
   list-style: none;
+}
+
+footer .footer-content p a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 section.about .card .card-detail .card-link ul li {
@@ -284,14 +301,6 @@ section.contact .title {
 section.contact .contact-text {
   padding: 20px;
   text-align: center;
-}
-
-section.contact .contact-text p {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  color: #cacad1;
 }
 
 section.contact .contact-form {
@@ -334,7 +343,6 @@ footer {
   align-items: center;
   width: 100%;
   margin: 20px 0;
-  
 }
 
 footer .foot-line {
@@ -342,13 +350,6 @@ footer .foot-line {
   width: 100%;
 }
 
-footer .footer-content p a {
-  color: #fff;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-}
 /* Media Query for Desktop vesion */
 
 @media screen and (min-width: 768px) {
@@ -382,6 +383,13 @@ footer .footer-content p a {
   section.portfolio .portfolio-head h1 {
     font-size: 90px;
     line-height: 105px;
+  }
+
+  section.about h2 {
+    font-size: 64px;
+    line-height: 114px;
+    font-weight: 700;
+    text-transform: capitalize;
   }
 
   section.portfolio .portfolio-head h2 {
@@ -431,13 +439,6 @@ footer .footer-content p a {
     display: block;
   }
 
-  section.about h2 {
-    font-size: 64px;
-    line-height: 114px;
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-
   section.about .card {
     display: grid;
     grid-template: auto/ 50% 50%;
@@ -465,7 +466,14 @@ footer .footer-content p a {
     padding: 20px 0 20px 0;
   }
 
-  section.about .card .card-detail P {
+  section.contact .contact-text p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  section.about .card .card-detail p {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -497,18 +505,11 @@ footer .footer-content p a {
     text-align: center;
   }
 
-  section.contact .contact-text p {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-  }
-
   section.contact .contact-form {
     margin: 20px 0;
   }
 
-  footer .footer-content{
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
