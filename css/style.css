@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 header {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -42,6 +44,17 @@ header .brand {
   font-size: 20px;
 }
 
+header .menu-icon{
+  top: 33px;
+  right: 38px;
+  position: absolute;
+}
+
+.fa-greater-than{
+color:#ACB7C3
+;
+}
+
 header .menu-icon i {
   font-size: 20px;
 }
@@ -50,8 +63,23 @@ header .menu:hover {
   color: #acb7c3;
 }
 
-header .menu ul {
+header .menu ul{
+  text-align: left;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 10px 0;
   display: none;
+}
+
+
+ header .menu ul li.message{
+  display: none;
+}
+
+header .menu ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .text-center {
@@ -354,6 +382,11 @@ footer .foot-line {
 /* Media Query for Desktop vesion */
 
 @media screen and (min-width: 768px) {
+  header{
+    display: flex;
+    flex-direction: row;
+  }
+  
   header .logo {
     font-size: 18px;
   }
