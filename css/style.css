@@ -25,6 +25,7 @@ body {
 }
 
 header {
+  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,6 +34,7 @@ header {
   font-family: "Roboto", sans-serif;
   padding: 30px 50px;
   line-height: 20px;
+  background-color: rgba(25, 23, 101, 1);
 }
 
 header .brand {
@@ -44,15 +46,10 @@ header .brand {
   font-size: 20px;
 }
 
-header .menu-icon{
+header .menu-icon {
   top: 33px;
   right: 38px;
   position: absolute;
-}
-
-.fa-greater-than{
-color:#ACB7C3
-;
 }
 
 header .menu-icon i {
@@ -63,23 +60,36 @@ header .menu:hover {
   color: #acb7c3;
 }
 
-header .menu ul{
+header .menu ul {
+  position: absolute;
   text-align: left;
   line-height: 50px;
   font-size: 18px;
   margin: 10px 0;
   display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  background-color: rgba(25, 23, 101, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
-
- header .menu ul li.message{
+header .menu ul li.message {
   display: none;
 }
 
-header .menu ul li{
+header .menu ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header .menu ul li i {
+  font-size: 13px;
+  color: #acb7c3;
 }
 
 .text-center {
@@ -92,6 +102,7 @@ section.portfolio {
   justify-content: space-between;
   background: url(../images/Top_circles.png) top center no-repeat;
   font-family: "Roboto", sans-serif;
+  margin-top: 80px;
 }
 
 section.portfolio .portfolio-head {
@@ -382,28 +393,46 @@ footer .foot-line {
 /* Media Query for Desktop vesion */
 
 @media screen and (min-width: 768px) {
-  header{
+  header {
+    position: static;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    line-height: 20px;
   }
-  
+
   header .logo {
     font-size: 18px;
   }
 
   header .menu ul {
-    list-style: none;
+    position: static;
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    width: 100%;
+    height: 0;
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0;
   }
 
-  header .menu .menu-icon {
+  header .menu .menu-icon,
+  header .menu ul li i {
     display: none;
   }
 
   header .menu ul a {
     font-size: 15px;
+  }
+
+  header .menu ul li.message {
+    display: block;
   }
 
   section.portfolio {
