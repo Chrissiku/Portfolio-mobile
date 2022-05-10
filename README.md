@@ -33,6 +33,9 @@
 - Twitter: [@twitterhandle](https://twitter.com/Ndikuma38670724)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ndikumana-isaie-21166273/)
 
+👤  **Josphat (Colaborator 3)**
+- GitHub: [@githubhandle](https://github.com/Josphat205
+
 
 ## 🤝 Contributing
 
