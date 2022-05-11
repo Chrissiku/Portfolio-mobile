@@ -60,11 +60,36 @@ section.popup .modal .modal-head {
   align-items: center;
 }
 
+section.portfolio .portfolio-head h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
 section.popup .modal .modal-head h1 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
+}
+
+.social i {
+  color: #fff;
+  font-size: 20px;
+}
+
+header .menu-icon i {
+  font-size: 20px;
+}
+
+header .menu ul li i {
+  font-size: 13px;
+  color: #acb7c3;
+}
+
+section.portfolio .portfolio-link .work i {
+  font-size: 20px;
+  margin: 0 10px;
 }
 
 section.popup .modal .modal-head .close_btn {
@@ -81,14 +106,14 @@ section.popup .modal .modal-head .close_btn i:hover {
   color: rgb(137, 187, 235);
 }
 
-section.popup .modal .modal-content::-webkit-scrollbar {
-  display: none;
-}
-
 section.popup .modal .modal-content {
   margin-top: 24px;
   overflow: hidden;
   overflow-y: scroll;
+}
+
+section.popup .modal .modal-content::-webkit-scrollbar {
+  display: none;
 }
 
 section.popup .modal .modal-content img {
@@ -100,6 +125,15 @@ section.popup .modal .modal-content .cont1 {
   padding-top: 10px;
 }
 
+section.portfolio .portfolio-infos p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #c8c8d4;
+}
+
 section.popup .modal .modal-content .cont1 p {
   text-align: center;
   font-size: 16px;
@@ -108,10 +142,45 @@ section.popup .modal .modal-content .cont1 p {
   line-height: 24px;
 }
 
+header .menu ul {
+  position: absolute;
+  text-align: left;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 10px 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  background-color: rgba(25, 23, 101, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+section.portfolio .portfolio-infos .techo ul {
+  list-style: none;
+}
+
+header .menu ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 section.popup .modal .modal-content .cont1 ul {
   display: flex;
   justify-content: center;
   margin: 24px auto;
+}
+
+section.portfolio .portfolio-infos .techo ul li {
+  color: #f5f5ff;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 3px 0;
 }
 
 section.popup .modal .modal-content .cont1 ul li {
@@ -119,8 +188,25 @@ section.popup .modal .modal-content .cont1 ul li {
   padding: 5px 8px;
 }
 
+section.about .card .card-detail .card-link ul li {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-right: 1px solid #555;
+  padding: 8px 10px;
+}
+
 section.popup .modal .modal-content .cont1 ul li:last-child {
   border-right: 2px solid #81818c;
+}
+
+footer .footer-content p a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 section.popup .modal .modal-content .cont1 ul li a {
@@ -135,6 +221,32 @@ section.popup .modal .modal-content .cont1 .modal-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.btn {
+  background: #3f36bb;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #7a71f7;
+}
+
+.btn:focus {
+  background: #5e42d7;
+}
+
+.btn:active {
+  background: #7d73fc;
+}
+
+.btn:disabled {
+  background: #2a2b33;
 }
 
 section.popup .modal .modal-content .cont1 .modal-btn .btn {
@@ -163,55 +275,18 @@ header .brand {
   font-size: 18px;
 }
 
-.social i {
-  color: #fff;
-  font-size: 20px;
-}
-
 header .menu-icon {
   top: 33px;
   right: 38px;
   position: absolute;
 }
 
-header .menu-icon i {
-  font-size: 20px;
-}
-
 header .menu:hover {
   color: #acb7c3;
 }
 
-header .menu ul {
-  position: absolute;
-  text-align: left;
-  line-height: 50px;
-  font-size: 18px;
-  margin: 10px 0;
-  display: none;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  padding: 50px;
-  background-color: rgba(25, 23, 101, 0.6);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-}
-
 header .menu ul li.message {
   display: none;
-}
-
-header .menu ul li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .menu ul li i {
-  font-size: 13px;
-  color: #acb7c3;
 }
 
 .text-center {
@@ -229,12 +304,6 @@ section.portfolio {
 
 section.portfolio .portfolio-head {
   margin-bottom: 20px;
-}
-
-section.portfolio .portfolio-head h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 72px;
 }
 
 section.about h2 {
@@ -257,15 +326,6 @@ section.portfolio .portfolio-infos {
   padding: 10px;
 }
 
-section.portfolio .portfolio-infos p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  padding: 10px;
-  margin-bottom: 20px;
-  color: #c8c8d4;
-}
-
 .line {
   border: 1px solid #646369;
   width: 85%;
@@ -285,18 +345,6 @@ section.portfolio .portfolio-infos .techo h3 {
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
-}
-
-section.portfolio .portfolio-infos .techo ul {
-  list-style: none;
-}
-
-section.portfolio .portfolio-infos .techo ul li {
-  color: #f5f5ff;
-  line-height: 24px;
-  font-size: 15px;
-  font-weight: 400;
-  padding: 3px 0;
 }
 
 section.portfolio .portfolio-link {
@@ -321,39 +369,8 @@ section.portfolio .portfolio-link .work {
   font-size: 20px;
 }
 
-section.portfolio .portfolio-link .work i {
-  font-size: 20px;
-  margin: 0 10px;
-}
-
 section.portfolio .portfolio-link .work-one {
   display: none;
-}
-
-.btn {
-  background: #3f36bb;
-  color: #fff;
-  border: none;
-  width: 100px;
-  height: 50px;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #7a71f7;
-}
-
-.btn:focus {
-  background: #5e42d7;
-}
-
-.btn:active {
-  background: #7d73fc;
-}
-
-.btn:disabled {
-  background: #2a2b33;
 }
 
 section.about {
@@ -392,22 +409,6 @@ section.about .card .card-detail h3 {
   padding: 20px 20px 20px 0;
 }
 
-section.contact .contact-text p {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  color: #cacad1;
-}
-
-section.about .card .card-detail p {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  color: #cacad1;
-}
-
 section.about .card .card-detail .card-link {
   padding-top: 20px;
   margin-bottom: 20px;
@@ -416,23 +417,6 @@ section.about .card .card-detail .card-link {
 section.about .card .card-detail .card-link ul {
   display: flex;
   list-style: none;
-}
-
-footer .footer-content p a {
-  color: #fff;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-}
-
-section.about .card .card-detail .card-link ul li {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  border-right: 1px solid #555;
-  padding: 8px 10px;
 }
 
 section.about .card .card-detail .card-link ul li:last-child {
@@ -519,6 +503,11 @@ footer .foot-line {
     background-image: none;
   }
 
+  section.portfolio .portfolio-head h1 {
+    font-size: 90px;
+    line-height: 105px;
+  }
+
   section.popup .modal .modal-head h1 {
     font-size: 40px;
     line-height: 32px;
@@ -529,8 +518,33 @@ footer .foot-line {
     height: 300px;
   }
 
+  section.contact .contact-text p {
+    color: #cacad1;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  section.portfolio .portfolio-infos p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 10px;
+    color: #c8c8d4;
+  }
+
+  section.about .card .card-detail p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #cacad1;
+  }
+
   section.popup .modal .modal-content .cont1 p {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 
@@ -592,11 +606,6 @@ footer .foot-line {
     padding: 10px 150px;
   }
 
-  section.portfolio .portfolio-head h1 {
-    font-size: 90px;
-    line-height: 105px;
-  }
-
   section.about h2 {
     font-size: 64px;
     line-height: 114px;
@@ -610,15 +619,6 @@ footer .foot-line {
     font-weight: 500;
     line-height: 47px;
     color: #edecff;
-  }
-
-  section.portfolio .portfolio-infos p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    padding: 10px;
-    color: #c8c8d4;
   }
 
   section.portfolio .portfolio-infos .techo {
@@ -681,21 +681,6 @@ footer .foot-line {
     line-height: 52px;
     font-weight: 500;
     padding: 20px 0 20px 0;
-  }
-
-  section.contact .contact-text p {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-  }
-
-  section.about .card .card-detail p {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #cacad1;
   }
 
   section.contact {
