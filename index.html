@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!-- Popup detail window -->
     <section class="popup" id="popup">
       <div class="modal">
         <div class="modal-head">
@@ -194,7 +195,7 @@
         </p>
       </div>
       <div class="contact-form">
-        <form action="https://formspree.io/f/xayvleal" method="post">
+        <form action="https://formspree.io/f/xayvleal" method="post" class="form">
           <label for="user_name"></label>
           <input
             type="text"
@@ -223,6 +224,7 @@
             required
             placeholder="Enter text here"
           ></textarea>
+          <span class="alert validatonAlert"></span>
           <button type="submit" class="btn">See Project</button>
         </form>
       </div>
