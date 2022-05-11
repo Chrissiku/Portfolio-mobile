@@ -1,20 +1,40 @@
 const sidebar = document.querySelector("header .menu ul");
 const mobileMenu = document.querySelector(".menu-icon");
 const aboutContent = document.querySelector("#about_content");
-let work_content = [
-  " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-  " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-  " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-  " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-];
-let work_images = [
-  "images/work_img.png",
-  "images/work_img.png",
-  "images/work_img.png",
-  "images/work_img.png",
-];
 
-let work_skills = ["css", "html", "bootstrap", "Ruby"];
+let work_post = [
+  {
+    title: "Multi-Post Stories 1",
+    image: "images/work_img.png",
+    content:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    techology: ["css", "html", "bootstrap", "Ruby"],
+  },
+
+  {
+    title: "Multi-Post Stories 2",
+    image: "images/work_img.png",
+    content:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    techology: ["css", "html", "bootstrap", "Ruby"],
+  },
+
+  {
+    title: "Multi-Post Stories 3",
+    image: "images/work_img.png",
+    content:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    techology: ["css", "html", "bootstrap", "Ruby"],
+  },
+
+  {
+    title: "Multi-Post Stories 4",
+    image: "images/work_img.png",
+    content:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    techology: ["css", "html", "bootstrap", "Ruby"],
+  },
+];
 
 function hideMe() {
   sidebar.addEventListener("click", () => {
@@ -34,17 +54,17 @@ mobileMenu.addEventListener("click", () => {
   }
 });
 
-for (let i = 0; i < work_content.length; i++) {
+for (let i = 0; i < work_post.length; i++) {
   let fetch = document.querySelector("#about_content").innerHTML;
   if (i % 2 !== 0) {
     aboutContent.innerHTML =
       `<div class="card">
       <div class="card-image">
-        <img src="${work_images[i]}" alt="Work image" />
+        <img src="${work_post[i].image}" alt="Work image" />
       </div>
       <div class="card-detail">
-        <h3>Multi-Post Stories ${i + 1}</h3>
-        <p>${work_content[i]}</p>
+        <h3>${work_post[i].title}</h3>
+        <p>${work_post[i].content}</p>
         <div class="card-link">
           <ul>
             <li><a href="">css</a></li>
@@ -63,11 +83,11 @@ for (let i = 0; i < work_content.length; i++) {
     aboutContent.innerHTML =
       `<div class="card pair">
   <div class="card-image">
-    <img src="${work_images[i]}" alt="Work image" />
+    <img src="${work_post[i].image}" alt="Work image" />
   </div>
   <div class="card-detail">
-    <h3>Multi-Post Stories ${i + 1}</h3>
-    <p>${work_content[i]}</p>
+    <h3>${work_post[i].title}</h3>
+    <p>${work_post[i].content}</p>
     <div class="card-link">    
       <ul>
         <li><a href="">css</a></li>

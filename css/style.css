@@ -24,6 +24,23 @@ body {
   color: #9390ff;
 }
 
+section.popup{
+  display: none;
+  border: 1px solid red;
+  position: fixed;
+  background-image: url(../images/Top_circles.png);
+  background-color: rgba(25, 23, 101, 0.5);
+  background-position: top center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  top : 0;
+  bottom : 0;
+  left : 0;
+  right : 0;
+  z-index: 1;
+}
+
 header {
   position: fixed;
   width: 100%;
