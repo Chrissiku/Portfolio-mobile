@@ -174,28 +174,29 @@ for (let a = 0; a < workPost.length; a += 1) {
 }
 // Form Validation
 
-const form = document.querySelector("#user_form");
-const Alert = document.querySelector(".alert");
-const email = document.querySelector("#email");
+const form = document.querySelector('#user_form');
+const Alert = document.querySelector('.alert');
+const email = document.querySelector('#email');
+const Mybtn = document.querySelector('#submit');
 
 function validateEmailAddress() {
   const regex = /[A-Z]/;
   const emailContent = email.value;
   if (regex.test(emailContent)) {
-    Alert.style.display = "block";
-    Alert.innerHTML = "Your email address should not contain uppercase letters (lowercase only !)";
-    event.preventDefault();
-  }else{    
-    Alert.style.display = "none";
-    Alert.innerHTML = "";
-    event.preventDefault();
+    Alert.style.display = 'block';
+    Mybtn.disabled = true;
+    Alert.innerHTML = 'Your email address should not contain uppercase letters (lowercase only !)';
+  } else {
+    Alert.style.display = 'none';
+    Alert.innerHTML = '';
+    Mybtn.disabled = false;
   }
 }
 
-email.addEventListener("input", (event)=>{
+email.addEventListener('input', () => {
   validateEmailAddress();
-})
+});
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', () => {
   validateEmailAddress();
 });

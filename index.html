@@ -164,6 +164,7 @@
             name="user_name"
             id="user_name"
             maxlength="30"
+            minlength="1"
             required
             placeholder="Enter your name"
           />
@@ -183,11 +184,12 @@
             cols="20"
             rows="5"
             maxlength="500"
+            minlength="5"
             required
             placeholder="Enter text here"
           ></textarea>
           <small class="alert"></small>
-          <button type="submit" class="btn">See Project</button>
+          <button type="submit" class="btn" id="submit">Send</button>
         </form>
       </div>
     </section>
