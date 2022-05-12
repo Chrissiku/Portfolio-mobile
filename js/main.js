@@ -4,7 +4,7 @@ const aboutContent = document.querySelector('#about_content');
 
 const workPost = [
   {
-    title: 'Multi-Post Stories 1',
+    title: 'Multi-Post Stories',
     image: 'images/work_img.png',
     content:
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -48,7 +48,7 @@ for (let i = 0; i < workPost.length; i += 1) {
         <p>${workPost[i].content}</p>
         <div class="card-link">
           <ul>
-          ${workPost[i].techology.map((j) => `<li>${j}</li>`)}
+          ${workPost[i].techology.map((j) => `<li>${j}</li>`).join('')}
           </ul>
         </div>
         <button type="button" id="btn-${i}" class="btn" data-open="popup">
@@ -67,7 +67,7 @@ for (let i = 0; i < workPost.length; i += 1) {
     <p>${workPost[i].content}</p>
     <div class="card-link">    
     <ul>
-    ${workPost[i].techology.map((j) => `<li><a>${j}</a></li>`)}
+    ${workPost[i].techology.map((j) => `<li><a>${j}</a></li>`).join('')}
     </ul>
     </div>
     <button type="button" id="btn-${i}" class="btn" data-open="popup">
@@ -119,7 +119,7 @@ function showModal() {
 for (let i = 0; i < workPost.length; i += 1) {
   const showModalBtn = document.querySelectorAll(`[id=btn-${i}]`);
   const postTitle = document.getElementById('post-title');
-  postTitle.textContent = workPost[i].title;
+  postTitle.textContent = workPost[0].title;
 
   showModalBtn.forEach((btnShow) => {
     btnShow.addEventListener('click', () => {
