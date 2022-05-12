@@ -157,7 +157,7 @@
         </p>
       </div>
       <div class="contact-form">
-        <form action="https://formspree.io/f/xayvleal" method="post">
+        <form action="https://formspree.io/f/xayvleal" method="post" id="user_form">
           <label for="user_name"></label>
           <input
             type="text"
@@ -167,12 +167,12 @@
             required
             placeholder="Enter your name"
           />
-          <label for="user_email"></label>
+          <label for="email"></label>
           <input
             type="email"
             required
-            name="user_email"
-            id="user_email"
+            name="email"
+            id="email"
             placeholder="Enter your Email"
             value="chrissiku5@gmail.com"
           />
@@ -186,6 +186,7 @@
             required
             placeholder="Enter text here"
           ></textarea>
+          <small class="alert"></small>
           <button type="submit" class="btn">See Project</button>
         </form>
       </div>

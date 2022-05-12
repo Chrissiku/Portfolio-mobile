@@ -172,3 +172,30 @@ for (let a = 0; a < workPost.length; a += 1) {
     });
   });
 }
+// Form Validation
+
+const form = document.querySelector("#user_form");
+const Alert = document.querySelector(".alert");
+const email = document.querySelector("#email");
+
+function validateEmailAddress() {
+  const regex = /[A-Z]/;
+  const emailContent = email.value;
+  if (regex.test(emailContent)) {
+    Alert.style.display = "block";
+    Alert.innerHTML = "Your email address should not contain uppercase letters (lowercase only !)";
+    event.preventDefault();
+  }else{    
+    Alert.style.display = "none";
+    Alert.innerHTML = "";
+    event.preventDefault();
+  }
+}
+
+email.addEventListener("input", (event)=>{
+  validateEmailAddress();
+})
+
+form.addEventListener("submit", (event) => {
+  validateEmailAddress();
+});
