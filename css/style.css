@@ -223,6 +223,10 @@ section.popup .modal .modal-content .cont1 .modal-btn {
   align-items: center;
 }
 
+section.popup .modal .modal-content .cont1 .modal-btn a{
+  color:#fff;
+}
+
 .btn {
   background: #3f36bb;
   color: #fff;
