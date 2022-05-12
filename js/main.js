@@ -118,14 +118,11 @@ function hideModal() {
 // Display specific post to the popup
 
 // Render dynamic section content in the popup_window
-let num;
 
-const postTitle = document.getElementById('post-title');
 
 for (let a = 0; a < workPost.length; a += 1) {
   const showModalBtn = document.querySelectorAll(`[id=btn-${a}]`);
 
-  num = a;
   showModalBtn.forEach((btnShow) => {
     btnShow.addEventListener('click', () => {
       showModal();
