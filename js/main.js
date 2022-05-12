@@ -12,7 +12,7 @@ const workPost = [
     title: 'Multi-Post Stories 1',
     image: 'https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720__480.jpg',
     content:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example, in the below print statement, what you`re printing to the screen is often surrounded by quotes.',
     techology: ['css', 'html', 'bootstrap', 'Ruby'],
     live: 'https://chrissiku.github.io/Portfolio-mobile/',
     source: 'https://github.com/Chrissiku/Portfolio-mobile',
@@ -22,7 +22,7 @@ const workPost = [
     title: 'Multi-Post Stories 2',
     image: 'https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/web_dev_pillar_page.jpg',
     content:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example, in the below print statement, what you`re printing to the screen is often surrounded by quotes.',
     techology: ['css', 'html', 'bootstrap', 'Ruby'],
     live: 'https://chrissiku.github.io/Portfolio-mobile/',
     source: 'https://github.com/Chrissiku/Portfolio-mobile',
@@ -32,7 +32,7 @@ const workPost = [
     title: 'Multi-Post Stories 3',
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
     content:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example, in the below print statement, what you`re printing to the screen is often surrounded by quotes.',
     techology: ['css', 'html', 'bootstrap', 'Ruby'],
     live: 'https://chrissiku.github.io/Portfolio-mobile/',
     source: 'https://github.com/Chrissiku/Portfolio-mobile',
@@ -42,7 +42,7 @@ const workPost = [
     title: 'Multi-Post Stories 4',
     image: 'http://www.parzlogic.com/wp-content/uploads/2017/10/web-dev.jpg',
     content:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example, in the below print statement, what you`re printing to the screen is often surrounded by quotes.',
     techology: ['css', 'html', 'bootstrap', 'Ruby'],
     live: 'https://chrissiku.github.io/Portfolio-mobile/',
     source: 'https://github.com/Chrissiku/Portfolio-mobile',
