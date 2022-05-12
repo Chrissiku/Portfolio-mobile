@@ -1,54 +1,54 @@
-const sidebar = document.querySelector("header .menu ul");
-const mobileMenu = document.querySelector(".menu-icon");
-const aboutContent = document.querySelector("#about_content");
-const modal = document.querySelector("#popup");
+const sidebar = document.querySelector('header .menu ul');
+const mobileMenu = document.querySelector('.menu-icon');
+const aboutContent = document.querySelector('#about_content');
+const modal = document.querySelector('#popup');
 
 function showModal() {
-  modal.style.display = "block";
+  modal.style.display = 'block';
 }
 
 const workPost = [
   {
-    title: "Multi-Post Stories 1",
+    title: 'Multi-Post Stories 1',
     image:
-      "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720__480.jpg",
+      'https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720__480.jpg',
     content:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...",
-    techology: ["css", "html", "bootstrap", "Ruby"],
-    live: "https://chrissiku.github.io/Portfolio-mobile/",
-    source: "https://github.com/Chrissiku/Portfolio-mobile",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...',
+    techology: ['css', 'html', 'bootstrap', 'Ruby'],
+    live: 'https://chrissiku.github.io/Portfolio-mobile/',
+    source: 'https://github.com/Chrissiku/Portfolio-mobile',
   },
 
   {
-    title: "Multi-Post Stories 2",
+    title: 'Multi-Post Stories 2',
     image:
-      "https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/web_dev_pillar_page.jpg",
+      'https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/web_dev_pillar_page.jpg',
     content:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...",
-    techology: ["css", "html", "bootstrap", "Ruby"],
-    live: "https://chrissiku.github.io/Portfolio-mobile/",
-    source: "https://github.com/Chrissiku/Portfolio-mobile",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...',
+    techology: ['css', 'html', 'bootstrap', 'Ruby'],
+    live: 'https://chrissiku.github.io/Portfolio-mobile/',
+    source: 'https://github.com/Chrissiku/Portfolio-mobile',
   },
 
   {
-    title: "Multi-Post Stories 3",
+    title: 'Multi-Post Stories 3',
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
     content:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...",
-    techology: ["css", "html", "bootstrap", "Ruby"],
-    live: "https://chrissiku.github.io/Portfolio-mobile/",
-    source: "https://github.com/Chrissiku/Portfolio-mobile",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...',
+    techology: ['css', 'html', 'bootstrap', 'Ruby'],
+    live: 'https://chrissiku.github.io/Portfolio-mobile/',
+    source: 'https://github.com/Chrissiku/Portfolio-mobile',
   },
 
   {
-    title: "Multi-Post Stories 4",
-    image: "http://www.parzlogic.com/wp-content/uploads/2017/10/web-dev.jpg",
+    title: 'Multi-Post Stories 4',
+    image: 'http://www.parzlogic.com/wp-content/uploads/2017/10/web-dev.jpg',
     content:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...",
-    techology: ["css", "html", "bootstrap", "Ruby"],
-    live: "https://chrissiku.github.io/Portfolio-mobile/",
-    source: "https://github.com/Chrissiku/Portfolio-mobile",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.n computer programming, quotes contain text or other data. For example...',
+    techology: ['css', 'html', 'bootstrap', 'Ruby'],
+    live: 'https://chrissiku.github.io/Portfolio-mobile/',
+    source: 'https://github.com/Chrissiku/Portfolio-mobile',
   },
 ];
 
@@ -65,7 +65,7 @@ for (let i = 0; i < workPost.length; i += 1) {
         <p>${workPost[i].content}</p>
         <div class="card-link">
           <ul>
-          ${workPost[i].techology.map((j) => `<li>${j}</li>`).join("")}
+          ${workPost[i].techology.map((j) => `<li>${j}</li>`).join('')}
           </ul>
         </div>
         <button type="button" id="btn-${i}" class="btn" data-open="popup">
@@ -84,7 +84,7 @@ for (let i = 0; i < workPost.length; i += 1) {
     <p>${workPost[i].content}</p>
     <div class="card-link">    
     <ul>
-    ${workPost[i].techology.map((j) => `<li><a>${j}</a></li>`).join("")}
+    ${workPost[i].techology.map((j) => `<li><a>${j}</a></li>`).join('')}
     </ul>
     </div>
     <button type="button" id="btn-${i}" class="btn" data-open="popup">
@@ -98,24 +98,24 @@ for (let i = 0; i < workPost.length; i += 1) {
 // Show and hide Menu
 
 function hideMenu() {
-  sidebar.addEventListener("click", () => {
-    sidebar.style.display = "none";
-    mobileMenu.firstElementChild.classList.replace("fa-times", "fa-bars");
+  sidebar.addEventListener('click', () => {
+    sidebar.style.display = 'none';
+    mobileMenu.firstElementChild.classList.replace('fa-times', 'fa-bars');
   });
 }
-mobileMenu.addEventListener("click", () => {
-  if (mobileMenu.firstElementChild.classList.contains("fa-bars")) {
-    sidebar.style.display = "block";
-    mobileMenu.firstElementChild.classList.replace("fa-bars", "fa-times");
+mobileMenu.addEventListener('click', () => {
+  if (mobileMenu.firstElementChild.classList.contains('fa-bars')) {
+    sidebar.style.display = 'block';
+    mobileMenu.firstElementChild.classList.replace('fa-bars', 'fa-times');
     hideMenu();
   } else {
-    sidebar.style.display = "none";
-    mobileMenu.firstElementChild.classList.replace("fa-times", "fa-bars");
+    sidebar.style.display = 'none';
+    mobileMenu.firstElementChild.classList.replace('fa-times', 'fa-bars');
   }
 });
 
 function hideModal() {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 }
 
 // Display specific post to the popup
@@ -126,7 +126,7 @@ for (let a = 0; a < workPost.length; a += 1) {
   const showModalBtn = document.querySelectorAll(`[id=btn-${a}]`);
 
   showModalBtn.forEach((btnShow) => {
-    btnShow.addEventListener("click", () => {
+    btnShow.addEventListener('click', () => {
       showModal();
       modal.innerHTML = `
       <div class="modal">
@@ -146,27 +146,27 @@ for (let a = 0; a < workPost.length; a += 1) {
                   <p id="post-text">${workPost[a].content}</p>
                   <ul id="post-techno">
                     ${workPost[a].techology
-                      .map((k) => `<li><a href="">${k}</a></li>`)
-                      .join("")}
+    .map((k) => `<li><a href="">${k}</a></li>`)
+    .join('')}
                   </ul>
                   <div class="modal-btn">
                     <button type="button" class="btn">
                       <a href="${
-                        workPost[a].live
-                      }">See Live</a>&nbsp;&nbsp;<i class="fa-solid fa-power-off"></i>
+  workPost[a].live
+}">See Live</a>&nbsp;&nbsp;<i class="fa-solid fa-power-off"></i>
                     </button>
                     <button type="button" class="btn">
                     <a href="${
-                      workPost[a].source
-                    }">See Source</a>&nbsp;&nbsp;<i class="fa-brands fa-github"></i>
+  workPost[a].source
+}">See Source</a>&nbsp;&nbsp;<i class="fa-brands fa-github"></i>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
       `;
-      const hideModalBtn = document.querySelector(".close_btn");
-      hideModalBtn.addEventListener("click", () => {
+      const hideModalBtn = document.querySelector('.close_btn');
+      hideModalBtn.addEventListener('click', () => {
         hideModal();
       });
     });

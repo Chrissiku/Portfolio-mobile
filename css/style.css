@@ -223,10 +223,6 @@ section.popup .modal .modal-content .cont1 .modal-btn {
   align-items: center;
 }
 
-section.popup .modal .modal-content .cont1 .modal-btn a{
-  color:#fff;
-}
-
 .btn {
   background: #3f36bb;
   color: #fff;
@@ -428,6 +424,10 @@ section.about .card .card-detail .card-link ul li:last-child {
 }
 
 section.about .card .card-detail .card-link ul li a {
+  color: #fff;
+}
+
+section.popup .modal .modal-content .cont1 .modal-btn a {
   color: #fff;
 }
 
