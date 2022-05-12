@@ -486,6 +486,18 @@ section.contact .contact-form form textarea {
   padding: 20px;
 }
 
+section.contact .contact-form small {
+  display: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  background-color: rgba(245, 6, 6, 0.342);
+  padding: 10px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
