@@ -200,3 +200,21 @@ email.addEventListener('input', () => {
 form.addEventListener('submit', () => {
   validateEmailAddress();
 });
+
+// preserve data in the browser
+// -------------------------------
+
+function fill_LocalStorage() {
+  form.addEventListener("input", () => {
+    // Create a localStore for typed informatin
+    const userInput = {
+      user_name: userName.value,
+      email: email.value,
+      your_message: message.value,
+    };
+    // Store users typed informations in my localStorage (userInput)
+    localStorage.setItem("userInput", JSON.stringify(userInput));
+  });
+}
+
+fill_LocalStorage();
