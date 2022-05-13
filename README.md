@@ -3,11 +3,11 @@
 # Portfolio : Setup and Mobile version skeleton
 
 > This projet is the number of milestones to follow in order to create a profesionnal portfolio website.
-> I have to use HTML & CSS best practices, Github flow and linter for HTML & CSS, to configure a github repos and prepare it for developments best practices.
+> I have to use HTML & CSS best practices, JavaScript best practice, Github flow and linter for HTML, CSS and Js to configure a github repos and prepare it for developments best practices.
 
 ## Built With
 
-- Major languages : HTML & CSS
+- Major languages : HTML & CSS, JavaScript
 - Technologies used : Git, Github & Linter
 
 ## Live demo
