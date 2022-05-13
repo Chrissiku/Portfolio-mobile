@@ -203,13 +203,13 @@ form.addEventListener('submit', () => {
 
 // preserve data in the browser
 // -------------------------------
-const userName = document.querySelector("#user_name");
-const message = document.querySelector("#msg");
+const userName = document.querySelector('#user_name');
+const message = document.querySelector('#msg');
 // email variable is already declared on form validation part
 
-
-function fill_LocalStorage() {
-  form.addEventListener("input", () => {
+function fillLocalStorage() {
+  // form variable is already declared on form validation part
+  form.addEventListener('input', () => {
     // Create a localStore for typed informatin
     const userInput = {
       user_name: userName.value,
@@ -217,16 +217,17 @@ function fill_LocalStorage() {
       your_message: message.value,
     };
     // Store users typed informations in my localStorage (userInput)
-    localStorage.setItem("userInput", JSON.stringify(userInput));
+    localStorage.setItem('userInput', JSON.stringify(userInput));
   });
 }
+
 function getLocalStorage() {
-  const local_userData = JSON.parse(localStorage.getItem("userInput"));
+  const localUserData = JSON.parse(localStorage.getItem('userInput'));
 
   //  pre-filled user input with localStorage's information.
-  userName.value = local_userData.user_name;
-  email.value = local_userData.email;
-  message.value = local_userData.your_message;
+  userName.value = localUserData.user_name;
+  email.value = localUserData.email;
+  message.value = localUserData.your_message;
 }
-fill_LocalStorage();
+fillLocalStorage();
 getLocalStorage();
